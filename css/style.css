@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* league-spartan-500 - latin */
 
 @font-face {
@@ -36,7 +43,8 @@
 }
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -72,15 +80,22 @@ a {
     background-color: var(--color-white);
     padding: 32px 40px;
     margin: 0;
-    box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+    -webkit-box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+            box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
     border-radius: var(--global-border-radius);
     border-left: 5px solid var(--global-color);
 }
 
 .contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .img-box img {
@@ -88,12 +103,18 @@ a {
 }
 
 .main-box-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .content-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .content-top h3 {
@@ -130,6 +151,8 @@ a {
     margin: 0;
     padding: 0;
     margin: 15px 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -155,8 +178,12 @@ a {
 }
 
 .content-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .content-right a {
@@ -165,6 +192,8 @@ a {
     padding: 4px 8px;
     border-radius: var(--global-border-radius);
     margin-left: 16px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
