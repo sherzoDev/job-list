@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* league-spartan-500 - latin */
 
 @font-face {
@@ -83,6 +90,13 @@ a {
     -webkit-box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
             box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
     border-radius: var(--global-border-radius);
+    border-left: 5px solid transparent;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.main-box-one:hover {
     border-left: 5px solid var(--global-color);
 }
 
